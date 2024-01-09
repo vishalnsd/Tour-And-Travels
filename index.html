@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprise</title>
+
+    <!-- ++++++++++++++++++++++++++++ locomotive css +++++++++++++++++++++++++ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!-- ++++++++++++++++++++ swiper css +++++++++++++++++++ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- ++++++++++++++++++++ css +++++++++++++++++++ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- +++++++++++++ remixcion -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ++++++++++++++++++ fonts +++++++++++++++++++ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- +++++++++++++++++++++++++++++ nav-pop-up +++++++++++++++++++++++++ -->
+
+    <div class="nav-pop-up" id="pop-up" data-scroll data-scroll-sticky data-scroll-target="#pop-up">
+        <i class="ri-close-line"></i>
+        <div>
+            <a href="#page-1">HOME</a>
+            <a href="#destination">DESTINATION</a>
+            <a href="#tour-guides">GUIDES</a>
+            <a href="#adventure">SIGN-UP</a>
+        </div>
+
+    </div>
+    <div id="main" data-scroll-container>
+
+        <!-- +++++++++++++++++++++++++++ hero +++++++++++++++++++++++++++= -->
+
+        <div id="page-1" data-scroll>
+            <div id="nav">
+                <div id="logo-center">
+                    <div id="logo" class="logo">
+                        <h4>Emprise</h4>
+                    </div>
+                    <div id="center" class="center">
+                        <h4>Destination</h4>
+                        <h4>Activities</h4>
+                        <h4>Specials</h4>
+                        <i class="ri-search-line" onmouseover="searchIn(this)"></i>
+                    </div>
+                </div>
+                <div id="last" class="last">
+                    <h4>Login</h4>
+                    <h4 onmouseover="buttonIn(this)">Sign Up</h4>
+                </div>
+                <div id="nav-search">
+                    <i class="ri-search-line"></i>
+                    <i class="ri-menu-5-fill"></i>
+                </div>
+            </div>
+            <!-- ++++++++++++++++++====== hero  ++++++++++++++++++ -->
+            <div id="hero">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                </div>
+                <div id="hero-content" data-scroll data-scroll-speed=".5">
+                    <div>
+                        <p class="himalya">The himalayan mountain ranges</p>
+                    </div>
+                    <div>
+                        <h1>Nepal Country</h1>
+                    </div>
+                    <div id="temp-payment">
+                        <div id="temperature">
+                            <p>-02&deg;C Very Cold</p>
+                            <!-- <i class="ri-arrow-left-line"></i><i class="ri-arrow-right-line"></i> -->
+                        </div>
+                        <div id="payment">
+                            <div id="payment-logo"><i class="ri-bank-card-line"></i></div>
+                            <div id="payment-details">
+                                <p>we accpet payment through <br>all cards and banking</p>
+                                <h3>Book Now!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="filter" data-scroll>
+                    <div id="location">
+                        <h4>Location <i class="ri-map-pin-2-line icon"></i></h4>
+                        <form action="">
+                            <input type="text" placeholder="Enter your destination" id="loc">
+                        </form>
+                    </div>
+                    <div id="activity">
+                        <h4>Activity <i class="ri-focus-line icon"></i></h4>
+                        <form action="">
+                            <select name="select_one" id="selectany">
+                                <option value="So1">Trekking</option>
+                                <option value="So2">Skydiving</option>
+                                <option value="So3">Caving</option>
+                                <option value="So3" selected>Biking</option>
+                                <option value="So3">Paragliding</option>
+                                <option value="So3">River Rafting</option>
+                                <option value="So3">Surfing</option>
+                                <option value="So3">Rock Climbing</option>
+                                <option value="So3">Hot Air Balloon</option>
+                            </select>
+                        </form>
+
+                    </div>
+                    <div id="date">
+                        <h4>Date <i class="ri-calendar-line icon"></i></h4>
+                        <form action="">
+                            <input type="date" placeholder="set date" id="dat">
+                        </form>
+                    </div>
+                    <i class="ri-search-line search" onmouseover="buttonIn(this)"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++ select category ++++++++++++++++-->
+
+        <div id="select" class="c-m-block" data-scroll>
+            <div id="select-cont" class="c-cont">
+                <div class="select-category">
+                    <h1 class="c-h1" data-scroll>Select Category</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, magni.</p>
+                </div>
+                <div class="btn" data-scroll>
+                    <div class="swiper-mySwiper">
+                        <i class="ri-arrow-left-line select-prev" onmouseover="buttonIn(this)"></i><i
+                            class="ri-arrow-right-line select-next" onmouseover="buttonIn(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--+++++++++++++++++++++++ Swiper for select category ++++++++++++++++++++++ -->
+
+            <div class="swiper1 mySwiper1" data-scroll>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-person-hiking"></i>
+                            <h3>Hiking Trips</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="ri-flight-takeoff-line"></i>
+                            <h3>Sky Diving</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="ri-tent-line"></i>
+                            <h3>Caving</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="ri-motorbike-line"></i>
+                            <h3>Biking</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="fa-solid fa-parachute-box"></i>
+                            <h3>Paragliding</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="fa-solid fa-sailboat"></i>
+                            <h3>River Rafting</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="fa-solid fa-water"></i>
+                            <h3>Surfing</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-person-hiking"></i>
+                            <h3>Rock Climbing</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-category" data-scroll>
+                        <p class="rating">4.9</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-person-hiking"></i>
+                            <h3>Hot Air Balloon</h3>
+                            <p>196 Activities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++==== trending ++++++++++++++++++++++++++++ -->
+
+        <div id="trending" class="c-m-block" data-scroll>
+            <div id="trending-cont" class="c-cont">
+                <div class="trending">
+                    <h1 class="c-h1">Trending 2023 </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, magni.</p>
+                </div>
+                <div class="btn">
+                    <div class="swiper-mySwiper">
+                        <i class="ri-arrow-left-line trending-prev" onmouseover="buttonIn(this)"></i><i
+                            class="ri-arrow-right-line trending-next" onmouseover="buttonIn(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--+++++++++++++++++++++++ Swiper for trending ++++++++++++++++++++++ -->
+
+            <div class="swiper2 mySwiper2" data-scroll>
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1459231978203-b7d0c47a2cb7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFkdmVudHVyZXxlbnwwfDB8MHx8fDA%3D"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1436162716854-dcb9157bfac1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGFkdmVudHVyZXxlbnwwfDB8MHx8fDA%3D"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTExfHxhZHZlbnR1cmV8ZW58MHwwfDB8fHww"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI1fHxhZHZlbnR1cmV8ZW58MHwwfDB8fHww"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1585919269553-2211f2a175ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzcxfHxhZHZlbnR1cmV8ZW58MHwwfDB8fHww"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1515404929826-76fff9fef6fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1627735410322-2a436b333f9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjEyfHxhZHZlbnR1cmV8ZW58MHwwfDB8fHww"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-trending">
+                        <div class="trending-img">
+                            <img src="https://images.unsplash.com/photo-1682687220640-9d3b11ca30e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="trending-about">
+                            <div class="trending-heading">
+                                <h4>Mountain Hiking Tour</h4>
+                                <i class="ri-heart-line"></i>
+                            </div>
+                            <p class="heading-para">Lorem, ipsum dolor.</p>
+                            <p class="heading-from">from</p>
+                            <div class="trending-price">
+                                <h3>$588.00</h3>
+                                <div class="rating">
+                                    <div class="star">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                    <p>4.5(455)</p>
+                                </div>
+                            </div>
+                            <p class="price-varies">price varies</p>
+                            <p class="days"><i class="ri-time-line"></i> 7 days</p>
+                            <div class="cancellation">
+                                <p>Free Cancellation</p>
+                                <p>No Hidden Charges</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++++ destination ++++++++++++++++++++++++++++ -->
+
+        <div id="destination" class="c-m-block" data-scroll>
+            <div id="destination-cont" class="c-cont">
+                <div class="destination">
+                    <h1 class="c-h1">Top Destination </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, magni.</p>
+                </div>
+            </div>
+            <div class="destination-gallery">
+                <div class="gal-img one" data-scroll data-scroll-speed=".5" data-scroll-delay=".10">
+                    <p class="gal-rating">4.5</p>
+                    <div class="gal-text">
+                        <h3>vietnam</h3>
+                        <p>waterfall</p>
+                    </div>
+                </div>
+                <div class="gal-img two" data-scroll data-scroll-speed=".5" data-scroll-delay=".20">
+                    <p class="gal-rating">4.5</p>
+                    <div class="gal-text">
+                        <h3>vietnam</h3>
+                        <p>waterfall</p>
+                    </div>
+                </div>
+                <div class="gal-img three" data-scroll data-scroll-speed=".5" data-scroll-delay=".30">
+                    <p class="gal-rating">4.5</p>
+                    <div class="gal-text">
+                        <h3>vietnam</h3>
+                        <p>waterfall</p>
+                    </div>
+                </div>
+                <div class="gal-img four" data-scroll data-scroll-speed=".5" data-scroll-delay=".40">
+                    <p class="gal-rating">4.5</p>
+                    <div class="gal-text">
+                        <h3>vietnam</h3>
+                        <p>waterfall</p>
+                    </div>
+                </div>
+                <div class="gal-img five" data-scroll data-scroll-speed=".5" data-scroll-delay=".50">
+                    <p class="gal-rating">4.5</p>
+                    <div class="gal-text">
+                        <h3>vietnam</h3>
+                        <p>waterfall</p>
+                    </div>
+                </div>
+                <div class="gal-img six" data-scroll data-scroll-speed=".5" data-scroll-delay=".60">
+                    <p class="gal-rating">4.5</p>
+                    <div class="gal-text">
+                        <h3>vietnam</h3>
+                        <p>waterfall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++ best seller +++++++++++++++++++++++++++ -->
+
+        <div id="seller" class="c-m-block" data-scroll>
+            <div id="seller-cont" class="c-cont" data-scroll>
+                <div class="seller">
+                    <h1 class="c-h1">Best Seller </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, magni.</p>
+                </div>
+                <h3 class="check" onmouseover="searchIn(this)">Check All</h3>
+            </div>
+            <div class="seller-gallery" data-scroll>
+                <div class="seller-container" data-scroll data-scroll-speed="1">
+                    <div class="seller-img-1 seller-img">
+                        <p class="seller-rating">-30%</p>
+                        <div class="seller-content">
+                            <div>
+                                <h3>$950.00</h3>
+                                <div>
+                                    <i class="ri-share-line"></i>
+                                    <h4>Explore</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seller-info">
+                        <h3>Train Tour Skyline</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="seller-container" data-scroll data-scroll-speed="1">
+                    <div class="seller-img-2 seller-img">
+                        <p class="seller-rating">-30%</p>
+                        <div class="seller-content">
+                            <div>
+                                <h3>$950.00</h3>
+                                <div>
+                                    <i class="ri-share-line"></i>
+                                    <h4>Explore</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seller-info">
+                        <h3>Train Tour Skyline</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="seller-container" data-scroll data-scroll-speed="1">
+                    <div class="seller-img-3 seller-img">
+                        <p class="seller-rating">-30%</p>
+                        <div class="seller-content">
+                            <div>
+                                <h3>$950.00</h3>
+                                <div>
+                                    <i class="ri-share-line"></i>
+                                    <h4>Explore</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seller-info">
+                        <h3>Train Tour Skyline</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++ tour guides +++++++++++++++++++++++++++ -->
+
+        <div id="tour-guides" class="c-m-block" data-scroll>
+            <div id="tour-guides-cont" class="c-cont">
+                <div class="tour-guides">
+                    <h1 class="c-h1">Tour Guides </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, magni.</p>
+                </div>
+                <div class="btn">
+                    <div class="swiper-mySwiper">
+                        <i class="ri-arrow-left-line guide-prev" onmouseover="buttonIn(this)"></i><i
+                            class="ri-arrow-right-line guide-next" onmouseover="buttonIn(this)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper3 mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-guide">
+                        <div class="guide-img-1 guide-img">
+                            <p>01</p>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-info-fchild">Adventure Guru</h3>
+                            <h1>Martina James <br> Juniour</h1>
+                            <div class="guide-about">
+                                <div>
+                                    <h3>About</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div>
+                                    <h3>Journey</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="guide-social" data-scroll data-scroll-speed="1">
+                                <i class="ri-facebook-fill"></i><i class="ri-instagram-line"></i><i
+                                    class="ri-twitter-x-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-guide">
+                        <div class="guide-img-2 guide-img">
+                            <p>02</p>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-info-fchild">Adventure Guru</h3>
+                            <h1>Martina James <br> Juniour</h1>
+                            <div class="guide-about">
+                                <div>
+                                    <h3>About</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div>
+                                    <h3>Journey</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="guide-social" data-scroll data-scroll-speed="1">
+                                <i class="ri-facebook-fill"></i><i class="ri-instagram-line"></i><i
+                                    class="ri-twitter-x-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-guide">
+                        <div class="guide-img-3 guide-img">
+                            <p>03</p>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-info-fchild">Adventure Guru</h3>
+                            <h1>Martina James <br> Juniour</h1>
+                            <div class="guide-about">
+                                <div>
+                                    <h3>About</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div>
+                                    <h3>Journey</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="guide-social" data-scroll data-scroll-speed="1">
+                                <i class="ri-facebook-fill"></i><i class="ri-instagram-line"></i><i
+                                    class="ri-twitter-x-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-guide">
+                        <div class="guide-img-4 guide-img">
+                            <p>04</p>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-info-fchild">Adventure Guru</h3>
+                            <h1>Martina James <br> Juniour</h1>
+                            <div class="guide-about">
+                                <div>
+                                    <h3>About</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div>
+                                    <h3>Journey</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="guide-social" data-scroll data-scroll-speed="1">
+                                <i class="ri-facebook-fill"></i><i class="ri-instagram-line"></i><i
+                                    class="ri-twitter-x-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++++++++ experience +++++++++++++++++++++++++ -->
+        <div id="experiance" class="c-m-block" data-scroll>
+            <div class="experiance-cont">
+                <h1>Tour the world from your couch wtih <br> #EpxperianceLive!</h1>
+                <p>To kickstart your digital adventure with enterprise</p>
+                <button>Check All</button>
+            </div>
+        </div>
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++ Adventure ++++++++++++++++++++++++ -->
+        <div id="adventure" class="c-m-block" data-scroll>
+            <div class="adv-gallery" data-scroll data-scroll-speed="1" data-scroll-delay=".20">
+                <div class="adv-img-1 adv-img"></div>
+                <div class="adv-img-2 adv-img"></div>
+                <div class="adv-img-3 adv-img"></div>
+            </div>
+            <div class="adv-content" data-scroll data-scroll-speed="1" data-scroll-delay=".05">
+                <div>
+                    <h3>Subscribe For Offers</h3>
+                    <h1>Adventures Calling <br>You Guys!</h1>
+                    <p>The brilliant reasons enterprise should be <br>your one-stop-shop.</p>
+                    <div class="email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email">
+                        <button>Send Now!</button>
+                    </div>
+                    <p class="reply">Expect a reply in 2-3 days.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- +++++++++++++++++++++++++++++++++ logo +++++++++++++++++++++++++++++++ -->
+        <div id="logo-btm" class="c-m-block" data-scroll>
+            <div class="logo-cont">
+                <div class="logo-img" data-scroll data-scroll-speed="1" data-scroll-delay=".10">
+                    <img src="https://www.sheryians.com/images/nagarro_logo.webp" alt="">
+                </div>
+                <div class="logo-img" data-scroll data-scroll-speed="1" data-scroll-delay=".40">
+                    <img src="https://www.sheryians.com/images/walmart.png" alt="">
+                </div>
+                <div class="logo-img" data-scroll data-scroll-speed="1" data-scroll-delay="1">
+                    <img src="https://www.sheryians.com/images/wipro.png" alt="">
+                </div>
+                <div class="logo-img" data-scroll data-scroll-speed="1" data-scroll-delay=" .40">
+                    <img src="https://www.sheryians.com/images/Amazon_logo.png" alt="">
+                </div>
+                <div class="logo-img" data-scroll data-scroll-speed="1" data-scroll-delay=" .10">
+                    <img src="https://www.sheryians.com/images/tcs.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- +++++++++++++++++++++++++++++++++++++++ question ++++++++++++++++++++ -->
+        <div id="question" class="c-m-block">
+            <div class="question-div">
+                <h1>Still have a question?</h1>
+                <p>The brilliant reasons emprise should be your one stop destination.</p>
+            </div>
+            <div class="question-gallery">
+                <div class="Sale">
+                    <i class="ri-customer-service-line"></i>
+                    <h3>For Sales</h3>
+                    <p>The brilliant reasons emprise should be <br>your one stop destination.</p>
+                    <h4>sales@enterprise.com <br>+91 1234-5678-90</h4>
+                </div>
+                <div class="support">
+                    <i class="ri-question-line"></i>
+                    <h3>Support</h3>
+                    <p>The brilliant reasons emprise should be <br>your one stop destination.</p>
+                    <h4>support@enterprise.com <br>+91 1234-5678-90</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--++++++++++++++++++++++++++++++++++++++++++ footter +++++++++++++++++++++++++++  -->
+        <div id="footer" class="c-m-block" data-scroll>
+            <div class="quick-links">
+                <div class="quick-link-1">
+                    <i class="ri-add-circle-line" onmouseover="buttonIn(this)"></i>
+                    <h3>QUICK LINKS</h3>
+                    <p>Explore more categories</p>
+                </div>
+                <div class="quick-link-2">
+                    <p>012-345-678-90</p>
+                    |
+                    <p>hello@enterprise.com</p>
+                </div>
+            </div>
+            <div class="get-in-touch">
+                <div>
+                    <p>Get in touch</p>
+                    <h1>Adventures Calling <br>You Guys! </h1>
+                </div>
+                <div>
+                    <i class="ri-global-line"></i>
+                    <div class="office">
+                        <p>Our Offices</p>
+                        <p>Nepal,U.S.A,India</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="act-links">
+                <div>
+                    <div>
+                        <h3>Services</h3>
+                        <p>Budget tours</p>
+                        <p>Corporate travel</p>
+                        <p>Hotels</p>
+                        <p>Foreign Exchange</p>
+                        <p>Flights</p>
+                        <p>Holidays</p>
+                    </div>
+                    <div>
+                        <h3>Adventures</h3>
+                        <p>Mountain Biking</p>
+                        <p>Paragliding</p>
+                        <p>River Rafting</p>
+                        <p>Rock Climbing</p>
+                        <p>Hot Air Balloon</p>
+                        <p>Jungle Camping</p>
+                    </div>
+                    <div>
+                        <h3>Country</h3>
+                        <p>Germany</p>
+                        <p>U.S.A</p>
+                        <p>India</p>
+                        <p>New Zealand</p>
+                        <p>Japan</p>
+                        <p>Finland</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Get In Touch</p>
+                    <h1>Let's Talk <i class="fa-solid fa-arrow-right-long last-arr"></i></h1>
+                    <div class="email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email">
+                        <button>Send Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="privacy-social">
+                <p>Privacy-Policy</p>
+                <p>LinkedIn / Facebook / Instagram</p>
+            </div>
+            <div class="copyright">
+                <p>2005-2023 &#169; Emprise</p>
+                <div>
+                    <img src="footer-card-1.png" alt="">
+                    <img src="footer-card-2.png" alt="">
+                    <img src="footer-card-3.png" alt="">
+                    <img src="footer-card-4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- +++++++++++++++++++++++++++++++++++++ loco js ++++++++++++++++++ -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- +++++++++++++++++++++++++++++++++++++ gsap ++++++++++++++++++++++ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+    <!-- +++++++++++++++++++++++++++++++++++= scrollTrigger +++++++++++++++++++++++++++++++++ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <!-- ++++++++++++++++++++ swiper js +++++++++++++++++++ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ++++++++++++++++++++ script js +++++++++++++++++++ -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
